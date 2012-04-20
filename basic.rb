@@ -23,4 +23,11 @@ get '/' do
   haml :index
 end
 
+get '/test' do
+  haml :test
+end
+
+get '/home' do
+  haml :home
+end
 

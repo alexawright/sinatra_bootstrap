@@ -17,15 +17,11 @@
     %link{:href => "/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
     %link{:href => "/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
     %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
-    /
-      Le javascript
-      \==================================================
-    / Placed at the end of the document so the pages load faster
     %script{:src => "/js/jquery.js"}
-    %script{:src => "/js/nav.js"}
     %script{:src => "/js/bootstrap.js"}
+    
   %body
-    .navbar.navbar-fixed-top
+    .navbar.navbar-responsive-top
       .navbar-inner
         .container
           %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
@@ -38,10 +34,5 @@
               %li.active
                 %a{:href => "/"} Basic
               %li
-                %a{:href => "/home"} Home
-              %li
                 %a{:href => "/test"} Test
-              %li
-                %a{:href => "#contact"} Contact
-          / /.nav-collapse
     = yield

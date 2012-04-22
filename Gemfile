@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
-require 'compass'
-require 'compass-bootstrap'
-require 'sinatra'
+gem 'sinatra'
+gem 'active_link_to'
+gem 'compass'
+gem 'compass-bootstrap'

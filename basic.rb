@@ -20,14 +20,15 @@ get '/stylesheets/:name.css' do
 end
 
 get '/' do
-  haml :index
+  haml :index, :layout => !request.xhr? 
+  #active_link_to 'Basic', '/'
 end
+
 
 get '/test' do
-  haml :test
+  haml :test, :layout => !request.xhr? 
+  #active_link_to 'Test', '/test'
 end
 
-get '/home' do
-  haml :home
-end
+
 

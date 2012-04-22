@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.nav a').click(function(e) {
-    $('.nav a').parent().removeClass('active');
+  $('.nav a').click(function(event) {
+    $(this).parent().removeClass('active');
   });
 });

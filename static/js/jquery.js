@@ -1549,7 +1549,7 @@ jQuery.support = (function() {
 		paddingMarginBorder = "padding:0;margin:0;border:";
 		positionTopLeftWidthHeight = "position:absolute;top:0;left:0;width:1px;height:1px;";
 		paddingMarginBorderVisibility = paddingMarginBorder + "0;visibility:hidden;";
-		style = "style='" + positionTopLeftWidthHeight + paddingMarginBorder + "5px solid #000;";
+		style = "style='" + positionTopLeftWidthHeight + paddingMarginBorder + "5px solid rgba(0, 0, 0, .4);";
 		html = "<div " + style + "display:block;'><div style='" + paddingMarginBorder + "0;display:block;overflow:hidden;'></div></div>" +
 			"<table " + style + "' cellpadding='0' cellspacing='0'>" +
 			"<tr><td></td></tr></table>";

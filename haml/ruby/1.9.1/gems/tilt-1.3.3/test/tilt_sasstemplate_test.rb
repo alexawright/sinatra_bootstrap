@@ -10,13 +10,13 @@ begin
     end
 
     test "compiles and evaluates the template on #render" do
-      template = Tilt::SassTemplate.new { |t| "#main\n  :background-color #0000f1" }
-      assert_equal "#main {\n  background-color: #0000f1; }\n", template.render
+      template = Tilt::SassTemplate.new { |t| "#main\n  :background-color rgba(0, 0, 0, .4)0f1" }
+      assert_equal "#main {\n  background-color: rgba(0, 0, 0, .4)0f1; }\n", template.render
     end
 
     test "can be rendered more than once" do
-      template = Tilt::SassTemplate.new { |t| "#main\n  :background-color #0000f1" }
-      3.times { assert_equal "#main {\n  background-color: #0000f1; }\n", template.render }
+      template = Tilt::SassTemplate.new { |t| "#main\n  :background-color rgba(0, 0, 0, .4)0f1" }
+      3.times { assert_equal "#main {\n  background-color: rgba(0, 0, 0, .4)0f1; }\n", template.render }
     end
   end
 
@@ -26,13 +26,13 @@ begin
     end
 
     test "compiles and evaluates the template on #render" do
-      template = Tilt::ScssTemplate.new { |t| "#main {\n  background-color: #0000f1;\n}" }
-      assert_equal "#main {\n  background-color: #0000f1; }\n", template.render
+      template = Tilt::ScssTemplate.new { |t| "#main {\n  background-color: rgba(0, 0, 0, .4)0f1;\n}" }
+      assert_equal "#main {\n  background-color: rgba(0, 0, 0, .4)0f1; }\n", template.render
     end
 
     test "can be rendered more than once" do
-      template = Tilt::ScssTemplate.new { |t| "#main {\n  background-color: #0000f1;\n}" }
-      3.times { assert_equal "#main {\n  background-color: #0000f1; }\n", template.render }
+      template = Tilt::ScssTemplate.new { |t| "#main {\n  background-color: rgba(0, 0, 0, .4)0f1;\n}" }
+      3.times { assert_equal "#main {\n  background-color: rgba(0, 0, 0, .4)0f1; }\n", template.render }
     end
   end
 

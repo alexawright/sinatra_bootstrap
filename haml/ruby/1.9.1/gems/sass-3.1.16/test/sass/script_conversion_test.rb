@@ -15,7 +15,7 @@ class SassScriptConversionTest < Test::Unit::TestCase
     assert_renders "rgba(0, 1, 2, 0.2)"
 
     assert_equal "#aabbcc", render("#abc")
-    assert_equal "blue", render("#0000ff")
+    assert_equal "blue", render("rgba(0, 0, 0, .4)0ff")
   end
 
   def test_number

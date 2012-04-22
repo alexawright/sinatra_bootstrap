@@ -8,7 +8,7 @@ $linkColor:         #0069d6 !default;
 $linkColorHover:    darken($linkColor, 15) !default;
 
 // Grays
-$black:             #000 !default;
+$black:             rgba(0, 0, 0, .4) !default;
 $grayDark:          lighten($black, 25%) !default;
 $gray:              lighten($black, 50%) !default;
 $grayLight:         lighten($black, 75%) !default;

@@ -10,13 +10,13 @@
   border-radius: 5px; }
 
 .gradient {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, #0000ff));
-  background: -webkit-linear-gradient(#ff0000, #0000ff);
-  background: -moz-linear-gradient(#ff0000, #0000ff);
-  background: -o-linear-gradient(#ff0000, #0000ff);
-  background: -ms-linear-gradient(#ff0000, #0000ff);
-  -pie-background: linear-gradient(#ff0000, #0000ff);
-  background: linear-gradient(#ff0000, #0000ff); }
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(100%, rgba(0, 0, 0, .4)0ff));
+  background: -webkit-linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff);
+  background: -moz-linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff);
+  background: -o-linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff);
+  background: -ms-linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff);
+  -pie-background: linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff);
+  background: linear-gradient(#ff0000, rgba(0, 0, 0, .4)0ff); }
 
 .pie-container, .widget {
   z-index: 0;

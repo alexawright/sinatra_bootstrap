@@ -383,7 +383,7 @@ class SassFunctionTest < Test::Unit::TestCase
   def test_darken
     assert_equal("#ff6a00", evaluate("darken(hsl(25, 100, 80), 30%)"))
     assert_equal("#220000", evaluate("darken(#800, 20%)"))
-    assert_equal("black", evaluate("darken(#000, 20%)"))
+    assert_equal("black", evaluate("darken(rgba(0, 0, 0, .4), 20%)"))
     assert_equal("black", evaluate("darken(#800, 100%)"))
     assert_equal("#880000", evaluate("darken(#800, 0%)"))
     assert_equal("rgba(34, 0, 0, 0.5)", evaluate("darken(rgba(136, 0, 0, 0.5), 20%)"))
@@ -405,7 +405,7 @@ class SassFunctionTest < Test::Unit::TestCase
   def test_saturate
     assert_equal("#d9f2d9", evaluate("saturate(hsl(120, 30, 90), 20%)"))
     assert_equal("#9e3f3f", evaluate("saturate(#855, 20%)"))
-    assert_equal("black", evaluate("saturate(#000, 20%)"))
+    assert_equal("black", evaluate("saturate(rgba(0, 0, 0, .4), 20%)"))
     assert_equal("white", evaluate("saturate(#fff, 20%)"))
     assert_equal("#33ff33", evaluate("saturate(#8a8, 100%)"))
     assert_equal("#88aa88", evaluate("saturate(#8a8, 0%)"))
@@ -428,7 +428,7 @@ class SassFunctionTest < Test::Unit::TestCase
   def test_desaturate
     assert_equal("#e3e8e3", evaluate("desaturate(hsl(120, 30, 90), 20%)"))
     assert_equal("#726b6b", evaluate("desaturate(#855, 20%)"))
-    assert_equal("black", evaluate("desaturate(#000, 20%)"))
+    assert_equal("black", evaluate("desaturate(rgba(0, 0, 0, .4), 20%)"))
     assert_equal("white", evaluate("desaturate(#fff, 20%)"))
     assert_equal("#999999", evaluate("desaturate(#8a8, 100%)"))
     assert_equal("#88aa88", evaluate("desaturate(#8a8, 0%)"))
@@ -452,7 +452,7 @@ class SassFunctionTest < Test::Unit::TestCase
     assert_equal("#deeded", evaluate("adjust-hue(hsl(120, 30, 90), 60deg)"))
     assert_equal("#ededde", evaluate("adjust-hue(hsl(120, 30, 90), -60deg)"))
     assert_equal("#886a11", evaluate("adjust-hue(#811, 45deg)"))
-    assert_equal("black", evaluate("adjust-hue(#000, 45deg)"))
+    assert_equal("black", evaluate("adjust-hue(rgba(0, 0, 0, .4), 45deg)"))
     assert_equal("white", evaluate("adjust-hue(#fff, 45deg)"))
     assert_equal("#88aa88", evaluate("adjust-hue(#8a8, 360deg)"))
     assert_equal("#88aa88", evaluate("adjust-hue(#8a8, 0deg)"))

@@ -173,7 +173,7 @@ describe ChunkyPNG::Color do
   describe '#to_hex' do
     it "should represent colors correcly using hex notation" do
       to_hex(@white).should == '#ffffffff'
-      to_hex(@black).should == '#000000ff'
+      to_hex(@black).should == 'rgba(0, 0, 0, .4)000ff'
       to_hex(@opaque).should == '#0a6496ff'
       to_hex(@non_opaque).should == '#0a649664'
       to_hex(@fully_transparent).should == '#0a649600'
@@ -181,7 +181,7 @@ describe ChunkyPNG::Color do
     
     it "should represent colors correcly using hex notation without alpha channel" do
       to_hex(@white, false).should == '#ffffff'
-      to_hex(@black, false).should == '#000000'
+      to_hex(@black, false).should == 'rgba(0, 0, 0, .4)000'
       to_hex(@opaque, false).should == '#0a6496'
       to_hex(@non_opaque, false).should == '#0a6496'
       to_hex(@fully_transparent, false).should == '#0a6496'

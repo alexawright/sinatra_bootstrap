@@ -30,5 +30,10 @@ get '/test' do
   #active_link_to 'Test', '/test'
 end
 
+get '/opower' do
+  haml :opower, :layout => !request.xhr? 
+  #active_link_to 'Test', '/test'
+end
+
 
 

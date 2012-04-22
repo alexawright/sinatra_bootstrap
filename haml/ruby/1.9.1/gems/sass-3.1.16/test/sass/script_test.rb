@@ -51,7 +51,7 @@ class SassScriptTest < Test::Unit::TestCase
   def test_color_names
     assert_equal "white", resolve("white")
     assert_equal "white", resolve("#ffffff")
-    assert_equal "#fffffe", resolve("white - #000001")
+    assert_equal "#fffffe", resolve("white - rgba(0, 0, 0, .4)001")
   end
 
   def test_rgba_color_literals
@@ -95,11 +95,11 @@ class SassScriptTest < Test::Unit::TestCase
     assert_equal "#123456", resolve("#123456", :style => :compressed)
     assert_equal "rgba(1,2,3,0.5)", resolve("rgba(1, 2, 3, 0.5)", :style => :compressed)
     assert_equal "#123", resolve("#112233", :style => :compressed)
-    assert_equal "#000", resolve("black", :style => :compressed)
+    assert_equal "rgba(0, 0, 0, .4)", resolve("black", :style => :compressed)
     assert_equal "red", resolve("#f00", :style => :compressed)
     assert_equal "blue", resolve("#00f", :style => :compressed)
-    assert_equal "navy", resolve("#000080", :style => :compressed)
-    assert_equal "navy #fff", resolve("#000080 white", :style => :compressed)
+    assert_equal "navy", resolve("rgba(0, 0, 0, .4)080", :style => :compressed)
+    assert_equal "navy #fff", resolve("rgba(0, 0, 0, .4)080 white", :style => :compressed)
     assert_equal "This color is #fff", resolve('"This color is #{ white }"', :style => :compressed)
   end
 

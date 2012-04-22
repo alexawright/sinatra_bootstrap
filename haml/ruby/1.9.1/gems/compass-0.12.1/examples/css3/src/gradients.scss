@@ -18,9 +18,9 @@ th.radial {
 
 tr.default {
   td.linear {
-    @include background-image(linear-gradient(#cc0000, #0000cc)); }
+    @include background-image(linear-gradient(#cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.radial {
-    @include background-image(radial-gradient(#cc0000, #0000cc)); }
+    @include background-image(radial-gradient(#cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.linear-code:before {
     content: "+background-image(linear-gradient(#c00, #00c))"; }
   td.radial-code:before {
@@ -28,9 +28,9 @@ tr.default {
 
 tr.top-left {
   td.linear {
-    @include background-image(linear-gradient(top left, #cc0000, #0000cc)); }
+    @include background-image(linear-gradient(top left, #cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.radial {
-    @include background-image(radial-gradient(top left, #cc0000, #0000cc)); }
+    @include background-image(radial-gradient(top left, #cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.linear-code:before {
     content: '+background-image(linear-gradient(top left, #c00, #00c))'; }
   td.radial-code:before {
@@ -38,9 +38,9 @@ tr.top-left {
 
 tr.bottom-right {
   td.linear {
-    @include background-image(linear-gradient(bottom right, #cc0000, #0000cc)); }
+    @include background-image(linear-gradient(bottom right, #cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.radial {
-    @include background-image(radial-gradient(bottom right, #cc0000, #0000cc)); }
+    @include background-image(radial-gradient(bottom right, #cc0000, rgba(0, 0, 0, .4)0cc)); }
   td.linear-code:before {
     content: '+background-image(linear-gradient(bottom right, #c00, #00c))'; }
   td.radial-code:before {
@@ -48,9 +48,9 @@ tr.bottom-right {
 
 tr.three-color {
   td.linear {
-    @include background-image(linear-gradient(#cc0000, white, #0000cc)); }
+    @include background-image(linear-gradient(#cc0000, white, rgba(0, 0, 0, .4)0cc)); }
   td.radial {
-    @include background-image(radial-gradient(#cc0000, white, #0000cc 50px)); }
+    @include background-image(radial-gradient(#cc0000, white, rgba(0, 0, 0, .4)0cc 50px)); }
   td.linear-code:before {
     content: "+background-image(linear-gradient(#c00, #fff, #00c))"; }
   td.radial-code:before {
@@ -58,9 +58,9 @@ tr.three-color {
 
 tr.four-color {
   td.linear {
-    @include background-image(linear-gradient(#cc0000, #00cc00 25%, #00cccc 75%, #0000cc)); }
+    @include background-image(linear-gradient(#cc0000, #00cc00 25%, #00cccc 75%, rgba(0, 0, 0, .4)0cc)); }
   td.radial {
-    @include background-image(radial-gradient(#cc0000, #00cc00 25%, #00cccc 75%, #0000cc 50px)); }
+    @include background-image(radial-gradient(#cc0000, #00cc00 25%, #00cccc 75%, rgba(0, 0, 0, .4)0cc 50px)); }
   td.linear-code:before {
     content: "+background-image(linear-gradient(#c00, #0c0 25%, #0cc 75%, #00c))"; }
   td.radial-code:before {
@@ -68,9 +68,9 @@ tr.four-color {
 
 tr.filled-in {
   td.linear {
-    @include background-image(linear-gradient(#cc0000 33%, #0000cc 66%)); }
+    @include background-image(linear-gradient(#cc0000 33%, rgba(0, 0, 0, .4)0cc 66%)); }
   td.radial {
-    @include background-image(radial-gradient(#cc0000 25px, #0000cc 75px)); }
+    @include background-image(radial-gradient(#cc0000 25px, rgba(0, 0, 0, .4)0cc 75px)); }
   td.linear-code:before {
     content: "+background-image(linear-gradient(#c00 33%, #00c 66%))"; }
   td.radial-code:before {

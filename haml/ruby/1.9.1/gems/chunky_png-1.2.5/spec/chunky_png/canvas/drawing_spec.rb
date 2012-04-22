@@ -39,7 +39,7 @@ describe ChunkyPNG::Canvas::Drawing do
     
     it "should draw partial lines if the coordinates are partially out of bounds" do
       canvas = ChunkyPNG::Canvas.new(1, 2, ChunkyPNG::Color::WHITE)
-      canvas.line(-5, -5, 0, 0, '#000000')
+      canvas.line(-5, -5, 0, 0, 'rgba(0, 0, 0, .4)000')
       canvas.pixels.should == [ChunkyPNG::Color::BLACK, ChunkyPNG::Color::WHITE]
     end
     

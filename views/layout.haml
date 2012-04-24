@@ -19,6 +19,7 @@
     %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
     %script{:src => "/js/jquery.js"}
     %script{:src => "/js/bootstrap.js"}
+    %script{:src => "/js/nav.js"}
     
   %body
     .navbar.navbar-responsive-top
@@ -37,4 +38,5 @@
                 %a{:href => "/test"} Test                
               %li
                 %a{:href => "/opower"} Opower
-    = yield
+    #main_content
+      = yield

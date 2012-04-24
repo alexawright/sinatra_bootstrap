@@ -21,18 +21,14 @@ end
 
 get '/' do
   haml :index, :layout => !request.xhr? 
-  #active_link_to 'Basic', '/'
 end
-
 
 get '/test' do
   haml :test, :layout => !request.xhr? 
-  #active_link_to 'Test', '/test'
 end
 
 get '/opower' do
   haml :opower, :layout => !request.xhr? 
-  #active_link_to 'Test', '/test'
 end
 
 

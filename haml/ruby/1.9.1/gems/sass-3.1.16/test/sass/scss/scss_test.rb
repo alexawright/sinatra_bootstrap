@@ -1265,7 +1265,7 @@ SCSS
 
   def test_options_passed_to_script
     assert_equal <<CSS, render(<<SCSS, :style => :compressed)
-foo{color:rgba(0, 0, 0, .4)}
+foo{color:#000}
 CSS
 foo {color: darken(black, 10%)}
 SCSS

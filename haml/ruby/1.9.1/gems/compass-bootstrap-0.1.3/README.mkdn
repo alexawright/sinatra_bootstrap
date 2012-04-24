@@ -79,7 +79,7 @@ Open _preboot.sccs and you will see the entire list of colors, you can change th
     $linkColorHover:    darken($linkColor, 10);
 
     // Grays
-    $black:             rgba(0, 0, 0, .4);
+    $black:             #000;
     $grayDark:          lighten($black, 25%);
     $gray:              lighten($black, 50%);
     $grayLight:         lighten($black, 75%);

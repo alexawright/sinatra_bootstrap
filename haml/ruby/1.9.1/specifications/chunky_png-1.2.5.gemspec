@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Willem van Bergen"]
-  s.date = "2011-09-22"
+  s.date = "2011-09-23"
   s.description = "    This pure Ruby library can read and write PNG images without depending on an external \n    image library, like RMagick. It tries to be memory efficient and reasonably fast.\n    \n    It supports reading and writing all PNG variants that are defined in the specification, \n    with one limitation: only 8-bit color depth is supported. It supports all transparency, \n    interlacing and filtering options the PNG specifications allows. It can also read and \n    write textual metadata from PNG files. Low-level read/write access to PNG chunks is\n    also possible.\n    \n    This library supports simple drawing on the image canvas and simple operations like\n    alpha composition and cropping. Finally, it can import from and export to RMagick for \n    interoperability.\n    \n    Also, have a look at OilyPNG at http://github.com/wvanbergen/oily_png. OilyPNG is a \n    drop in mixin module that implements some of the ChunkyPNG algorithms in C, which \n    provides a massive speed boost to encoding and decoding.\n"
   s.email = ["willem@railsdoctors.com"]
   s.extra_rdoc_files = ["README.rdoc", "BENCHMARKS.rdoc"]

@@ -105,4 +105,4 @@ h1 {
     @include background-image(radial-gradient(#dddddd 20px, #aaaaaa 50%, #cc0000 200px)); }
   .radial-6 {
     // A centered gradient with color stops
-    @include background-image(radial-gradient(#00cc00 0px, #dddddd 20px, #aaaaaa 50px, rgba(0, 0, 0, .4)0cc 100px)); } }
+    @include background-image(radial-gradient(#00cc00 0px, #dddddd 20px, #aaaaaa 50px, #0000cc 100px)); } }

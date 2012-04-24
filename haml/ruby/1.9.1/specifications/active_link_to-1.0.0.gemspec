@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Oleg Khabarov"]
-  s.date = "2011-07-21"
+  s.date = "2011-07-22"
   s.description = "Extremely helpful when you need to add some logic that figures out if the link (or more often navigation item) is selected based on the current page or other arbitrary condition"
   s.email = "oleg@theworkinggroup.ca"
   s.extra_rdoc_files = ["LICENSE", "README.md"]

@@ -1129,7 +1129,7 @@ SASS
 white
   +foo
 black
-  +foo(rgba(0, 0, 0, .4))
+  +foo(#000)
 SASS
     assert_equal(<<CSS, render(<<SASS))
 one {
@@ -2174,7 +2174,7 @@ SASS
     assert_equal(<<CSS, render(<<SASS))
 .foo {
   color: #01ff7f;
-  background-color: rgba(0, 0, 0, .4)102; }
+  background-color: #000102; }
 CSS
 =foo($c1, $c2: rgb(0, 1, 2))
   color: $c1

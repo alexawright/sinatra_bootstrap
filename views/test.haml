@@ -13,10 +13,23 @@
           %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
   .row
+    .span12
+      %ul.thumbnails
+        %li.span4
+          %a.thumbnail{:href => "#"}
+            %img{:alt => "", :src => "http://placehold.it/360x268"}
+        - 8.times do |i|
+          %li.span2
+            %a.thumbnail{:href => "#"}
+              %img{:alt => "", :src => "http://placehold.it/160x120"}
+
+  .row
     - 3.times do |i|
       .span4
-        - 4.times do |i|
-          %h2 Heading
+        - 2.times do |i|
+          %h2 buttonianz
+          .progress
+            .bar{:style => "width: 60%;"}
           .btn-toolbar
             .btn-group
               %a.btn.btn-primary{:href => "#"}

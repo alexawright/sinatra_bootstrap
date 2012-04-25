@@ -8,3 +8,11 @@ $(document).ready(function() {
     return false;
   });
 });
+
+$(document).ready(function() {
+  $('.progress').hover(function() {
+    $(this).children().css('width', '100%');
+  }, function() {
+    $(this).children().css('width', '0%');
+  });
+});

@@ -1,4 +1,16 @@
+%script{:src => "/js/test_buttons.js"}
+
 .container  
+  .row.buttons
+    .span12
+      .btn-toolbar
+        .btn-group
+          %button.btn#collapse Collapse Divs 
+        .btn-group
+          %button.btn#opacity Change Opacity
+        .btn-group
+          %button.btn#background Change Background
+
   - 2.times do |i|
     .row
       - 2.times do |i|
@@ -10,7 +22,7 @@
           %i.icon-fire
           %i.icon-ok-sign
           %i.icon-camera                
-          %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+          %p.top Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 
   .row
     .span12

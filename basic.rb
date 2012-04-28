@@ -31,5 +31,8 @@ get '/opower' do
   haml :opower, :layout => !request.xhr? 
 end
 
+get '/cameo' do
+  haml :cameo, :layout => !request.xhr? 
+end
 
 

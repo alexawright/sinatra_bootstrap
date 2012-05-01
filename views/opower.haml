@@ -10,9 +10,7 @@
   .row.contents
     .span8
       .graph
-        %h3 Ryan vs Me
-      .comment
-        %a{:href=>"#"} Write a Comment to Tom
+        %h3 Ryan vs Me      
       .tips
         %h3 Ryan's Top Tips
         .tip
@@ -63,7 +61,11 @@
           3-5 People
       .achievements
         %h3 Achievements
-        .inner
+        %ul.badges
+          - 6.times do |i|
+            %li
+              %img{:src => "images/badge.png"}
+              %p Savings Awards
       .usage
         %h3 March Usage Results
         %h1 305 kWh
@@ -72,8 +74,9 @@
           %p 17% improvement over last year
         .stat
           .green
-          %p 17% improvement over last year
+          %p 3% better than similar homes
         .stat
           .green
-          %p 17% improvement over last year
-
+          %p 2nd place in Opower Employees
+      .comment
+        %a{:href=>"#"} Write a Comment to Ryan

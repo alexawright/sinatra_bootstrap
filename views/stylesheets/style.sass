@@ -24,9 +24,7 @@ p.top span
   -moz-border-radius: 4px
   -webkit-border-radius: 4px
   border-radius: 4px
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .4)
-  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .4)
-  -box-shadow: 0 0 1px rgba(0, 0, 0, .4)
+  +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
   display: block
   margin: 1px 0 1px 0
   padding: 20px
@@ -38,7 +36,6 @@ p.top span
 .user
   background: none
   box-shadow: none
-  height: 100px - 40px
   margin-bottom: 0
   .info
     float: left
@@ -83,16 +80,15 @@ img.profile
   a:hover
     text-decoration: none
     background: white
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .4)
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .4)
-    -box-shadow: 0 0 1px rgba(0, 0, 0, .4)
+    +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
     
-  
 .row.contents
   margin-bottom: 100px
 
 p.quote
   padding-top: 1em
+p.address
+  color: #666666
   
 .tip
   padding-top: 2em
@@ -106,3 +102,39 @@ p.quote
   float: right
   margin-left: 10px
   margin-top: 20px
+  
+.stat
+  padding-top: 8px  
+  .green
+    +box-shadow(0 0 4px rgba(0, 0, 0, 0.4))
+    float: left
+    display: block
+    width: 20px
+    height: 20px
+    +linear-gradient(top, #3EC43A, #319F2D, $fallback: #3EC43A)
+    margin-right: 1em
+  p
+    display: block
+    
+.usage
+  h1
+    font-size: 60px
+    padding: 20px 0 20px 0
+    font-weight: 200
+    
+ul.badges
+  padding: 1em 0 0 0
+  margin: auto
+  width: 330px
+  li
+    list-style: none
+    float: left
+    text-align: center
+    width: 100px
+    padding-right: 10px
+    p
+      padding-top: 10px
+      font-style: italic
+      color: #666666
+      text-shadow: none
+      font-size: 11px

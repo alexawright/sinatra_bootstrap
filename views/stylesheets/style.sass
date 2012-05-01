@@ -106,6 +106,7 @@ img.profile
     text-align: left
     background: white
     padding: 20px
+    overflow: auto
     h3
       margin: .25em 0
     p.date
@@ -163,20 +164,20 @@ img.profile
     border: 1px solid transparent    
     &:hover
       cursor: pointer
-      +linear-gradient(top, #3EC43A, #319F2D, $fallback: #3EC43A)
-      color: white
+      +linear-gradient(top, #D7F1D6, #AFD9BA, $fallback: #D7F1D6)
+      color: #37B133      
       text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3)
       +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
       text-decoration: none
-      border: 1px solid #00B44F
+      border: 1px solid #AFD9BA
     &.selected
       width: 140px
       text-align: center
       +box-shadow(inset 0 0 1px rgba(0, 0, 0, 0.4))
-      background: #EEEEEE
+      background: rgba(58, 186, 54, .2)
       border: 1px solid #C7D6DD
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
-      color: #3ABA36
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3)
+      color: #37B133
       &:hover
         color: white
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)

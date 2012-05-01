@@ -1,79 +1,78 @@
 %script{:src => "/js/test_buttons.js"}
 
-.container  
-  .row.buttons
-    .span12
-      .btn-toolbar
-        .btn-group
-          %button.btn#collapse Collapse Divs 
-        .btn-group
-          %button.btn#opacity Change Opacity
-        .btn-group
-          %button.btn#background Change Background
+.row.buttons
+  .span12
+    .btn-toolbar
+      .btn-group
+        %button.btn#collapse Collapse Divs 
+      .btn-group
+        %button.btn#opacity Change Opacity
+      .btn-group
+        %button.btn#background Change Background
 
-  - 2.times do |i|
-    .row
-      - 2.times do |i|
-        .span6
-          %h2 i can haz icons
-          %i.icon-headphones
-          %i.icon-envelope      
-          %i.icon-tint
-          %i.icon-fire
-          %i.icon-ok-sign
-          %i.icon-camera                
-          %p.top Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-
+- 2.times do |i|
   .row
-    .span12
-      %ul.thumbnails
-        %li.span4
+    - 2.times do |i|
+      .span6
+        %h2 i can haz icons
+        %i.icon-headphones
+        %i.icon-envelope      
+        %i.icon-tint
+        %i.icon-fire
+        %i.icon-ok-sign
+        %i.icon-camera                
+        %p.top Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+
+.row
+  .span12
+    %ul.thumbnails
+      %li.span4
+        %a.thumbnail{:href => "#"}
+          %img{:alt => "", :src => "http://placehold.it/360x268"}
+      - 8.times do |i|
+        %li.span2
           %a.thumbnail{:href => "#"}
-            %img{:alt => "", :src => "http://placehold.it/360x268"}
-        - 8.times do |i|
-          %li.span2
-            %a.thumbnail{:href => "#"}
-              %img{:alt => "", :src => "http://placehold.it/160x120"}
+            %img{:alt => "", :src => "http://placehold.it/160x120"}
 
-  .row
-    - 3.times do |i|
-      .span4
-        - 2.times do |i|
-          %h2 buttonianz
-          .progress
-            .bar{:style => "width: 40%;"}
-          .btn-toolbar
-            .btn-group
-              %a.btn.btn-primary{:href => "#"}
-                %i.icon-user.icon-white
-                User
-              %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-                %span.caret
-              %ul.dropdown-menu
-                %li
-                  %a{:href => "#"}
-                    %i.icon-pencil
-                    Edit
-                %li
-                  %a{:href => "#"}
-                    %i.icon-trash
-                    Delete
-                %li
-                  %a{:href => "#"}
-                    %i.icon-ban-circle
-                    Ban
-                %li.divider
-                %li
-                  %a{:href => "#"}
-                    %i.i
-                    Make admin
-            .btn-group
-              %a.btn{:href => "#"}
-                %i.icon-align-left
-              %a.btn{:href => "#"}
-                %i.icon-align-center
-              %a.btn{:href => "#"}
-                %i.icon-align-right
-              %a.btn{:href => "#"}
-                %i.icon-align-justify
-          %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elite.
+.row
+  - 3.times do |i|
+    .span4
+      - 2.times do |i|
+        %h2 buttonianz
+        .progress
+          .bar{:style => "width: 40%;"}
+        .btn-toolbar
+          .btn-group
+            %a.btn.btn-primary{:href => "#"}
+              %i.icon-user.icon-white
+              User
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"}
+                  %i.icon-pencil
+                  Edit
+              %li
+                %a{:href => "#"}
+                  %i.icon-trash
+                  Delete
+              %li
+                %a{:href => "#"}
+                  %i.icon-ban-circle
+                  Ban
+              %li.divider
+              %li
+                %a{:href => "#"}
+                  %i.i
+                  Make admin
+          .btn-group
+            %a.btn{:href => "#"}
+              %i.icon-align-left
+            %a.btn{:href => "#"}
+              %i.icon-align-center
+            %a.btn{:href => "#"}
+              %i.icon-align-right
+            %a.btn{:href => "#"}
+              %i.icon-align-justify
+        %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elite.

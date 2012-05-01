@@ -3,7 +3,7 @@
 
 
 body
-  +linear-gradient(top, #DFFFFF 85%, #FFFFFF 98%, #8FC741 98%, #8FC741 100%, $fallback: #DFFFFF)
+  +linear-gradient(top, #DFFFFF, #FFFFFF, $fallback: #DFFFFF) //, #8FC741 98%, #8FC741 100%,
   font-family: $helvetica
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4)
   color: #4D4D4D
@@ -12,6 +12,10 @@ body
   background: url('/images/opower.png') no-repeat bottom center
   height: 200px
   margin-top: -200px
+#grass
+  background: #8FC741
+  height: 100px
+  margin-top: -32px
 #cameo .row .span12
   background: #4A4A4A
   
@@ -37,7 +41,7 @@ p.top span
   .inner
     width: 100%
 
-.achievements, .tips
+.achievements, .tips, .activity, .comment
   margin-top: 10px
   
 .span4, .span12

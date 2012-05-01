@@ -77,8 +77,10 @@ img.profile
 .graph
   height: 446px
   overflow: hidden
+  position: relative
   .score
     display: inline-block
+    clear: both
     width: 226px
     margin: 20px 80px 0 0
     .h3
@@ -97,6 +99,10 @@ img.profile
       +linear-gradient(top, #25CD92, #009A4C, $fallback: #00990B)
     .tom
       +linear-gradient(top, #FB7285, #9F6165, $fallback: #FF8E97)
+  .names
+    position: absolute
+    display: block
+    bottom: 20px
   .chart
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
     filter: alpha(opacity=0)
@@ -105,10 +111,15 @@ img.profile
     opacity: 0
     display: block
     margin-top: 1em
-    height: 360px
-    width: 730px
-    background: url('/images/graph.jpg')
-    +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
+    width: 100%
+    position: relative
+    img#chart
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
+      
   
 .comment
   overflow: auto

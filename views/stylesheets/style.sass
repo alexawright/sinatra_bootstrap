@@ -118,10 +118,10 @@ img.profile
     display: none
     +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
     .entry
-      // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
-      // filter: alpha(opacity=0)
-      // -moz-opacity: 0
-      // -khtml-opacity: 0
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      filter: alpha(opacity=0)
+      -moz-opacity: 0
+      -khtml-opacity: 0
       opacity: 0
   button
     padding: 0
@@ -172,8 +172,11 @@ img.profile
     &.selected
       width: 140px
       text-align: center
-      +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
+      +box-shadow(inset 0 0 1px rgba(0, 0, 0, 0.4))
+      background: #EEEEEE
       border: 1px solid #C7D6DD
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4)
+      color: #3ABA36
       &:hover
         color: white
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)

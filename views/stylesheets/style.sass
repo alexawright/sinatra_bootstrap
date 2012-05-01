@@ -3,7 +3,7 @@
 
 
 body
-  +linear-gradient(top, #DFFFFF, #74D7DB, $fallback: #74D7DB)
+  +linear-gradient(top, #DFFFFF, #00C7C6, $fallback: #00C7C6)
   font-family: $helvetica
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4)
   color: #4D4D4D
@@ -31,7 +31,8 @@ p.top span
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.4)
   .inner
     width: 100%
-            
+
+
 .user
   background: none
   box-shadow: none
@@ -57,6 +58,7 @@ img.profile
     display: block
     margin-top: 1em
     height: 360px
+    width: 730px
     background: url('/images/graph.jpg')
     +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
   
@@ -65,7 +67,7 @@ img.profile
   text-align: center
   position: relative
   .inner
-    min-height: 100px
+    min-height: 113px
   .new
     padding-top: 20px
   .entry
@@ -91,23 +93,27 @@ img.profile
     display: block
     +border-radius(4px)
     +transition (all 2.0s ease-in-out)
+    border: 1px solid transparent    
     &:hover
       cursor: pointer
-      background: #B0E3E2
+      background: #A5E9EB
       color: white
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3)
       +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
       text-decoration: none
+      border: 1px solid #9ECFF8
   a.want_click
     display: none
   a.selected
     width: 140px
     text-align: center
-    background: white
     +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
+    border: 1px solid #C7D6DD
     &:hover
-      color: #0C71A4
-      text-shadow: none
+      color: white
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)
+      background: #FF5C69
+      border: 1px solid #FFBFC8
     
     
 .row.contents
@@ -130,10 +136,11 @@ p.address
 .tip_info 
   height: 65px
   width: 270px
+  h4
+    padding-bottom: 10px
 .tip_options
   float: right
-  margin-left: 10px
-  margin-top: 20px
+  margin-top: 30px
   
   
 .stat
@@ -157,9 +164,8 @@ p.address
     border-top: 1px dashed rgba(0, 0, 0, 0.2)
     padding-top: 10px
 .usage 
-  min-height: 227px
   h1
-    font-size: 60px
+    font-size: 50px
     margin: .25em 0 .25em 0
     font-weight: 200
     text-align: center
@@ -169,21 +175,30 @@ p.address
 .activity
   p
     padding: .25em 0 .25em 0
-  p.date
-    float: right
-    font-style: italic
+  .social 
+    clear: both
+    a
+      float: left
+      margin-right: 30px
+    p.date
+      float: right
+      font-style: italic
+      padding: 0
+      margin: 0
+
+.achievements
+  min-height: 250px
+  a.view_all  
     padding: 0
     margin: 0
-.social 
-  clear: both
-  margin-bottom: -1em
-  a
-    margin-right: 30px
-
+    float: right
+          
 ul.badges
   padding: 1em 0 0 0
   margin: auto
   width: 330px
+  height: 210px
+  overflow: hidden
   li
     list-style: none
     float: left

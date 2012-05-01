@@ -3,9 +3,10 @@
 
 
 body
-  +linear-gradient(top, #A0F5FF, #42D2E2, $fallback: #3dc3d1)
+  +linear-gradient(top, #DFFFFF, #74D7DB, $fallback: #74D7DB)
   font-family: $helvetica
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4)
+  color: #4D4D4D
   
 #cameo .row .span12
   background: #4A4A4A
@@ -21,14 +22,12 @@ p.top span
   
 .user, .graph, .comment, .tips, .activity, .about, .achievements, .usage
   overflow: auto
-  -moz-border-radius: 4px
-  -webkit-border-radius: 4px
-  border-radius: 4px
-  +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
+  +border-radius(0px)
+  +box-shadow(0 0 6px rgba(0, 0, 0, 0.3))
   display: block
-  margin: 1px 0 1px 0
+  margin: 1px 
   padding: 20px
-  background: rgba(255, 255, 255, 0.8)
+  background: rgba(255, 255, 255, 0.9)
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.4)
   .inner
     width: 100%
@@ -58,17 +57,28 @@ img.profile
     display: block
     margin-top: 1em
     height: 360px
-    +border-radius(4px)
     background: url('/images/graph.jpg')
     +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
   
 .comment
   overflow: auto
   text-align: center
-  a
+  position: relative
+  .inner
+    min-height: 100px
+  .new
+    padding-top: 20px
+  .entry
+    text-align: left
+    background: white
+    padding: 20px
+  #comments
+    display: none
+    +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
+  button
     padding: 0
     display: block
-    margin: 0 auto
+    margin: auto 
     +button(#F7F7F7)
     &:hover
       text-decoration: none
@@ -81,10 +91,21 @@ img.profile
     display: block
     +border-radius(4px)
     +transition (all 2.0s ease-in-out)
-  a:hover
-    text-decoration: none
+    &:hover
+      cursor: pointer
+      background: #B0E3E2
+      color: white
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)
+      +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
+      text-decoration: none
+  a.want_click
+    display: none
+  a.selected
     background: white
     +box-shadow(0 0 1px rgba(0, 0, 0, 0.4))
+    &:hover
+      color: #6DB7CC
+    
     
 .row.contents
   margin-bottom: 100px
@@ -93,6 +114,10 @@ p.quote
   padding-top: 1em
 p.address
   color: #666666
+
+.tips
+  min-height: 314px
+  overflow: auto
   
 .tip
   padding-top: 2em
@@ -107,8 +132,9 @@ p.address
   margin-left: 10px
   margin-top: 20px
   
+  
 .stat
-  padding-top: 8px  
+  padding: 4px 0 
   .green
     +box-shadow(0 0 4px rgba(0, 0, 0, 0.4))
     float: left
@@ -119,18 +145,38 @@ p.address
     margin-right: 1em
   p
     display: block
+    padding-top: .25em
 
 .about p
   font-size: 14px
   font-weight: 200
   &.address
-    border-top: 1px dashed gray
+    border-top: 1px dashed rgba(0, 0, 0, 0.2)
     padding-top: 10px
-.usage h1
-  font-size: 60px
-  padding: 20px 0 20px 0
-  font-weight: 200
-    
+.usage 
+  min-height: 227px
+  h1
+    font-size: 60px
+    margin: .25em 0 .25em 0
+    font-weight: 200
+    text-align: center
+    span
+      font-size: 30px
+
+.activity
+  p
+    padding: .25em 0 .25em 0
+  p.date
+    float: right
+    font-style: italic
+    padding: 0
+    margin: 0
+.social 
+  clear: both
+  margin-bottom: -1em
+  a
+    margin-right: 30px
+
 ul.badges
   padding: 1em 0 0 0
   margin: auto
@@ -140,10 +186,8 @@ ul.badges
     float: left
     text-align: center
     width: 100px
-    padding-right: 10px
+    padding: 4px
     p
       padding-top: 10px
-      font-style: italic
-      color: #666666
       text-shadow: none
       font-size: 11px

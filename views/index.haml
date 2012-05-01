@@ -1,40 +1,101 @@
-.container
-  / Main hero unit for a primary marketing message or call to action
-  .hero-unit        
-    %h1 Hello, world!
-    %p Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-    %p
-      %a.btn.primary.large Learn more &raquo;
-  / Example row of columns
+.container#opower  
   .row
+    .span12
+      .user
+        %img.profile{:src => 'images/profile.jpg'}
+        .info
+          %h3 Tom Mercer
+          %p Silver Level
+        
+  .row.contents
+    .span8
+      .graph
+        %h3 Tom vs Me      
+        .chart
+      .tips
+        %h3 Tom's Top Tips
+        .tip
+          .span1
+            %img.profile{:src => 'images/profile.jpg'}        
+          .tip_info.span3
+            %h4 Unplug electronics
+            %p "I always nag my wife to unplug her cellphone charger"
+          .tip_options
+            %a.already I already do this
+            %a.want I want to do this
+            %a.apply Doesn't apply to me
+        .tip
+          .span1
+            %img.profile{:src => 'images/profile.jpg'}        
+          .tip_info.span3
+            %h4 Unplug electronics
+            %p "I always nag my wife to unplug her cellphone charger"
+          .tip_options
+            %a.already I already do this
+            %a.want I want to do this
+            %a.apply Doesn't apply to me
+        .tip
+          .span1
+            %img.profile{:src => 'images/profile.jpg'}        
+          .tip_info.span3
+            %h4 Unplug electronics
+            %p "I always nag my wife to unplug her cellphone charger"
+          .tip_options
+            %a.selected You already do this!
+      .comment
+        .inner
+          #comments
+            .entry
+              %h3 Tom Mercer
+              %p.date March 17th, 2012
+              %p This is some text that I'm writing as a comment
+          .new
+            %p <em>No comments</em>
+            %button.new_comment Write a Comment to Tom
+                            
     .span4
-      %h2 Heading
-      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      .alert.alert-info
-        %a.close{"data-dismiss" => "alert"} ×
-        %strong Warning!
-        Best check yo self, you're not looking too good.
+      .about
+        %h3 About Tom
+        %p.quote "I live in an apartment with 3 roommates so I try to be efficient but sometimes it is difficult to get my roommates to do the same."
+        %p.address
+          South East Climate Zone
+          %br
+          1000 - 1500 Square Feet
+          %br
+          Electric Head
+          %br
+          3-5 People
+      .achievements
+        %h3 Achievements
+        %ul.badges
+          - 6.times do |i|
+            %li
+              %img{:src => "images/badge.png"}
+              %p Savings Awards
+      .usage
+        %h3 March Usage Results        
+        %h1 
+          305 
+          %span 
+            kWh
+        .stat
+          .green
+          %p 17% improvement over last year
+        .stat
+          .green
+          %p 3% better than similar homes
+        .stat
+          .green
+          %p 2nd place in Opower Employees
+      .activity
+        %h3 Recent Activity
+        %h4 Tom won the UtilCo March Challenge
+        %p 
+          The UtilCo March challenge was to use 10% less energy than the previous March.
+        .social
+          %a Like
+          %a Comment
+          %a Share
+          %p.date March 17th, 2012
+          
       
-      %p
-        %a.btn{:href => "#"} View details &raquo;
-    .span4
-      %h2 Heading
-      %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-      .alert.alert-success
-        %a.close{"data-dismiss" => "alert"} ×
-        %strong Warning!
-        Best check yo self, you're not looking too good.
-      %p
-        %a.btn{:href => "#"} View details &raquo;
-    .span4
-      %h2 Heading
-      %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      .alert.alert-error
-        %a.close{"data-dismiss" => "alert"} ×
-        %strong Warning!
-        Best check yo self, you're not looking too good.
-      %p
-        %a.btn{:href => "#"} View details &raquo;
-  %footer
-    %p &copy; Company 2011
-/ /container

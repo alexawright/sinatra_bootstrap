@@ -1,23 +1,14 @@
 $(document).ready(function() {
-  $('.nav a').click(function(event) {
-    $('.nav a').parent().removeClass('active');
-    $(this).parent().addClass('active');
-    $.ajax(this.href).done(function(data) { 
-      $('#main_content .container').html(data);
+  $('button.new_comment').click(function(event) {
+    $('#comments').slideDown(400);
+  });
+  $('.tip_options a.want').click(function(event) {
+    event.preventDefault();
+    $(this).parent().fadeOut(400, function(){
+      $(this).html('<a class="selected">Added this to your plan</a>').fadeIn(400);
     });
-    return false;
   });
 });
-
-$(document).ready(function() {
-  $('.progress').hover(function() {
-    $(this).children().css('width', '100%');
-  }, function() {
-    $(this).children().css('width', '0%');
-  });
-});
-
-
 
 
 

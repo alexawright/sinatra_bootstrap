@@ -7,7 +7,14 @@ body
   font-family: $helvetica
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4)
   color: #4D4D4D
-  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+  filter: alpha(opacity=0)
+  -moz-opacity: 0
+  -khtml-opacity: 0
+  opacity: 0
+
+#main_content
+  margin-bottom: 80px
 #lower
   background: url('/images/opower.png') no-repeat bottom center
   height: 200px
@@ -91,6 +98,11 @@ img.profile
     .tom
       +linear-gradient(top, #FB7285, #9F6165, $fallback: #FF8E97)
   .chart
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+    filter: alpha(opacity=0)
+    -moz-opacity: 0
+    -khtml-opacity: 0
+    opacity: 0
     display: block
     margin-top: 1em
     height: 360px

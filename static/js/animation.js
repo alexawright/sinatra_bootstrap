@@ -1,4 +1,7 @@
 $(document).ready(function() {
+  $('body').delay(800).animate({'opacity': 1}, 1000, function(){
+    $('.chart').animate({'opacity': 1}, 1000);
+  });
   $('button.new_comment').click(function(event) {
     $('#comments').slideDown(400, function(){
       $('#comments .entry').animate({'opacity': 1}, 400, function() {

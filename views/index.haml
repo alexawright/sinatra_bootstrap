@@ -12,6 +12,15 @@
       .graph
         %h3 Tom vs Me      
         .chart
+        .score
+          %h3 
+            Tom          
+            %span.tom
+        .score
+          %h3 
+            Me
+            %span.me
+        
       .tips
         %h3 Tom's Top Tips
         .tip
@@ -65,14 +74,6 @@
           Electric Head
           %br
           3-5 People
-      .achievements
-        %h3 Achievements
-        %ul.badges
-          - 26.times do |i|
-            %li
-              %img{:src => "images/badge.png"}
-              %p Savings Awards        
-        %a.view_all View All
       .usage
         %h3 March Usage Results        
         %h1 
@@ -88,6 +89,14 @@
         .stat
           .green
           %p 2nd place in Opower Employees
+      .achievements
+        %h3 Achievements
+        %ul.badges
+          - 9.times do |i|
+            %li
+              %img{:src => "images/badge.png"}
+              %p Savings Awards        
+        %a.view_all View All
       .activity
         %h3 Recent Activity
         %h4 Tom won the UtilCo March Challenge

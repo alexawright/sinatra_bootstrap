@@ -24,9 +24,9 @@ $(document).ready(function() {
     });
   });
   $('a.view_all').toggle(function() {
-    $('ul.badges').animate({'height': '800px'}, 2000)
+    $('ul.badges').animate({'height': '330px'}, 800)
   }, function() {
-    $('ul.badges').animate({'height': '210px'}, 2000)
+    $('ul.badges').animate({'height': '210px'}, 800)
   });
 });
 

@@ -54,7 +54,13 @@ img.profile
   
 
 .graph
-  height: 400px - 40px
+  .chart
+    display: block
+    margin-top: 1em
+    height: 360px
+    +border-radius(4px)
+    background: url('/images/graph.jpg')
+    +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
   
 .comment
   overflow: auto
@@ -73,9 +79,7 @@ img.profile
     margin-top: -10px
     padding: 8px 6px 8px 6px
     display: block
-    -moz-border-radius: 4px
-    -webkit-border-radius: 4px
-    border-radius: 4px
+    +border-radius(4px)
     +transition (all 2.0s ease-in-out)
   a:hover
     text-decoration: none
@@ -115,12 +119,17 @@ p.address
     margin-right: 1em
   p
     display: block
-    
-.usage
-  h1
-    font-size: 60px
-    padding: 20px 0 20px 0
-    font-weight: 200
+
+.about p
+  font-size: 14px
+  font-weight: 200
+  &.address
+    border-top: 1px dashed gray
+    padding-top: 10px
+.usage h1
+  font-size: 60px
+  padding: 20px 0 20px 0
+  font-weight: 200
     
 ul.badges
   padding: 1em 0 0 0

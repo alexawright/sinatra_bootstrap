@@ -14,11 +14,11 @@
         .chart
         .score
           %h3 
-            Tom          
+            Tom's Energy Usage         
             %span.tom
         .score
           %h3 
-            Me
+            My Energy Usage
             %span.me
         
       .tips
@@ -51,16 +51,17 @@
             %p "I always nag my wife to unplug her cellphone charger"
           .tip_options
             %a.selected You already do this!
-      .comment
-        .inner
-          #comments
-            .entry
-              %h3 Tom Mercer
-              %p.date March 17th, 2012
-              %p This is some text that I'm writing as a comment
-          .new
-            %p <em>No comments</em>
-            %button.new_comment Write a Comment to Tom
+      
+      .activity
+        %h3 Recent Activity
+        %h4 Tom won the UtilCo March Challenge
+        %p 
+          The UtilCo March challenge was to use 10% less energy than the previous March.
+        .social
+          %a Like
+          %a Comment
+          %a Share
+          %p.date March 17th, 2012
                             
     .span4
       .about
@@ -96,16 +97,16 @@
             %li
               %img{:src => "images/badge.png"}
               %p Savings Awards        
-        %a.view_all View All
-      .activity
-        %h3 Recent Activity
-        %h4 Tom won the UtilCo March Challenge
-        %p 
-          The UtilCo March challenge was to use 10% less energy than the previous March.
-        .social
-          %a Like
-          %a Comment
-          %a Share
-          %p.date March 17th, 2012
-          
+        %a.view_all View All        
+      .comment
+        .inner
+          #comments
+            .entry
+              %h3 Tom Mercer                                             
+              %p This is some text that I'm writing as a comment
+              %p.date March 17th, 2012 
+          .new
+            %p.no_comment <em>No comments</em>
+            %button.new_comment Write a Comment to Tom
+
       

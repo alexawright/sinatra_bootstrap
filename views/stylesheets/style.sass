@@ -24,6 +24,7 @@ p.top span
 .clear_header 
   margin-top: 60px
   
+
 .user, .graph, .comment, .tips, .activity, .about, .achievements, .usage
   overflow: auto
   +border-radius(0px)
@@ -36,6 +37,11 @@ p.top span
   .inner
     width: 100%
 
+.achievements, .tips
+  margin-top: 10px
+  
+.span4, .span12
+  margin-left: 10px
 
 .user
   background: none
@@ -62,7 +68,7 @@ img.profile
   overflow: hidden
   .score
     display: inline-block
-    width: 100px
+    width: 226px
     margin: 20px 80px 0 0
     .h3
       float: left
@@ -100,9 +106,23 @@ img.profile
     text-align: left
     background: white
     padding: 20px
+    h3
+      margin: .25em 0
+    p.date
+      float: right
+      font-weight: normal
+      font-style: italic
+      font-size: 11px
+      margin-top: -6px
   #comments
     display: none
     +box-shadow(0 0 5px 1px rgba(0, 0, 0, 0.2))
+    .entry
+      // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+      // filter: alpha(opacity=0)
+      // -moz-opacity: 0
+      // -khtml-opacity: 0
+      opacity: 0
   button
     padding: 0
     display: block
@@ -157,7 +177,7 @@ img.profile
       &:hover
         color: white
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4)
-        +linear-gradient(top, #FF5C69, #FF0038, $fallback: #FF5C69)
+        +linear-gradient(top, #FB7285, #9F6165, $fallback: #FF8E97)
         border: 1px solid #FFBFC8
   
 .row.contents

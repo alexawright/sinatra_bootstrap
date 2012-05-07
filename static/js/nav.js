@@ -3,7 +3,7 @@ $(document).ready(function() {
     $('.nav a').parent().removeClass('active');
     $(this).parent().addClass('active');
     $.ajax(this.href).done(function(data) { 
-      $('#main_content .container').html(data);
+      $('#main_content .container').fadeOut(400).html(data).hide().fadeIn(400);
     });
     return false;
   });

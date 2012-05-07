@@ -5,7 +5,19 @@
     %p Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     %p
       %a.btn.primary.large Learn more &raquo;
-  / Example row of columns
+  .row
+    .span12
+      .tabbable
+        %ul.nav.nav-tabs
+          %li.active
+            %a{"data-toggle" => "tab", :href => "#tab1"} Section 1
+          %li
+            %a{"data-toggle" => "tab", :href => "#tab2"} Section 2
+        .tab-content
+          #tab1.tab-pane.active
+            %p I'm in Section 1.
+          #tab2.tab-pane
+            %p Howdy, I'm in Section 2.
   .row
     .span4
       %h2 Heading

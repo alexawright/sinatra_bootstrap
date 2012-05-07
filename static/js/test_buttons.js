@@ -29,11 +29,11 @@ $(document).ready(function() {
   });
   
   $("#background").toggle(function() {
-    $('.row').not('.row.buttons').css({'background': '#eeeeee'});
-    $('#background').text('I don\'t really like gray dude');
+    $('.container.well').css({'background': '#92B2B7'});
+    $('#background').text('Not a fan of that color!');
   }, function() {
-    $('.row').not('.row.buttons').css({'background': 'none'});
-     $('#background').text('Change Background');
+    $('.container.well').css({'background': 'whiteSmoke'});
+    $('#background').text('Change Background');
   });
   
 });

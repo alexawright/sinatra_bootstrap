@@ -27,12 +27,9 @@ get '/test' do
   haml :test, :layout => !request.xhr? 
 end
 
-get '/opower' do
-  haml :opower, :layout => !request.xhr? 
+get '/pics' do
+  haml :pics, :layout => !request.xhr? 
 end
 
-get '/cameo' do
-  haml :cameo, :layout => !request.xhr? 
-end
 
 

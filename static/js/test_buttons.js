@@ -17,13 +17,13 @@ $(document).ready(function() {
   $("#opacity").toggle(function() {
     $('.row').not('.row.buttons').animate({
       opacity: 0.25
-    }, 2000, function(){
+    }, 400, function(){
       $('#opacity').text('Too Hazy No Thanks');
   });
   }, function() {
     $('.row').not('.row.buttons').animate({
       opacity: 1
-    }, 2000, function(){
+    }, 400, function(){
       $('#opacity').text('Change Opacity');
     });
   });

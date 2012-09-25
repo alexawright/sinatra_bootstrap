@@ -1,5 +1,27 @@
 $(document).ready(function() {
   
+  // ajax #load content
+  $('.nav a').live('click', function(e) {
+    e.preventDefault();
+    var load = $('#load');
+
+    $('.nav a').parent().removeClass('active');
+    $(this).parent().addClass('active');
+    
+    load.fadeOut(200);       
+    $.ajax(this.href).done(function(data) { 
+        load.html(data).hide().fadeIn(200);
+    });                            
+  });
+    
+  $('.progress').hover(function() {
+    $(this).children().css('width', '100%');
+  }, function() {
+    $(this).children().css('width', '0%');
+  });
+  
+  $('.container#test').parent().parent().css('background', '#eeeeee');
+  
   $("#collapse").toggle(function() {
     $('.row').not('.row.buttons').animate({
       height: 'toggle'

@@ -23,13 +23,10 @@ get '/' do
   haml :index, :layout => !request.xhr? 
 end
 
-get '/test' do
-  haml :test, :layout => !request.xhr? 
+get '/:name' do
+  haml :"#{params[:name]}", :layout => !request.xhr? 
 end
 
-get '/pics' do
-  haml :pics, :layout => !request.xhr? 
-end
 
 
 

@@ -10,4 +10,8 @@ $(document).ready ->
     $.ajax(@href).done (data) ->
       load.html(data).hide().fadeIn 200
 
+  # testFunction called on /pics
+  testFunction = () ->
+    alert 'This is a test function!'
+  window.testFunction = testFunction
 

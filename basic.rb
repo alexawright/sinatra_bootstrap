@@ -2,6 +2,7 @@ require 'rubygems'
 require 'compass' #must be loaded before sinatra
 require 'sinatra'
 require 'haml'    #must be loaded after sinatra
+require 'coffee-script'
 
 # set sinatra's variables
 set :app_file, __FILE__
@@ -17,6 +18,10 @@ end
 get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
   sass(:"stylesheets/#{params[:name]}", Compass.sass_engine_options )
+end
+
+get '/coffee/:name.js' do
+  coffee :"coffee/#{params[:name]}"  
 end
 
 get '/' do

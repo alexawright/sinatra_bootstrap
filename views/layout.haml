@@ -17,9 +17,6 @@
     %link{:href => "/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
     %link{:href => "/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
     %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
-    %script{:src => "/js/jquery.js"}
-    %script{:src => "/js/bootstrap.js"}
-    %script{:src => "/js/scripts.js"}
     
   %body
     .navbar.navbar-responsive-top
@@ -40,3 +37,7 @@
                 %a{:href => "/pics"} Pictures  
     #load
       = yield
+
+    %script{:src => "/js/jquery.js"}
+    %script{:src => "/js/bootstrap.js"}
+    %script{:src => "/coffee/scripts.js"}

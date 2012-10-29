@@ -19,22 +19,7 @@
     %link{:href => "/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
     
   %body
-    .navbar.navbar-responsive-top
-      .navbar-inner
-        .container
-          %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand{:href => "/"} Ryan's Sinatra Bootstrap
-          .nav-collapse
-            %ul.nav.header_nav
-              %li.active
-                %a{:href => "/"} Basic
-              %li
-                %a{:href => "/test"} Test Some Elements              
-              %li
-                %a{:href => "/pics"} Pictures  
+    = haml :navbar
     #load
       = yield
 
